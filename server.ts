@@ -1,10 +1,11 @@
 import * as express from 'express';
 import { Request, Response } from 'express';
+import * as path from 'path';
 const app = express();
 
 app.set('view engine', 'ejs');
 
-app.use(express.static('views'));
+app.set('views', path.join(__dirname, 'views'));
 
 app.get('/', (req: Request, res: Response) => {
     res.redirect('/home');
@@ -21,5 +22,4 @@ app.use('/products', productsRouter);
 app.use('/company', companyRouter);
 app.use('/404', pagenotfounderror);
 app.use('/rainin-player', raininaudio);
-
 app.listen(9000);
