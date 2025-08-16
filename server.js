@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express = require("express");
+var app = express();
+app.set('view engine', 'ejs');
+app.use(express.static('views'));
+app.get('/', function (req, res) {
+    res.redirect('/home');
+});
+var userRouter = require('./routes/home.js');
+var productsRouter = require('./routes/products.js');
+var companyRouter = require('./routes/company.js');
+var pagenotfounderror = require('./routes/404.js');
+var raininaudio = require('./routes/rainin-music.js');
+app.use('/home', userRouter);
+app.use('/products', productsRouter);
+app.use('/company', companyRouter);
+app.use('/404', pagenotfounderror);
+app.use('/rainin-player', raininaudio);
+app.listen(5000);
