@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainin | Home</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="icon shortcut" type="x-icon" href="images/rainin-web.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/responsive/1.0.5/responsive.min.js"></script>
+</head>
+<body>
+    <!-- Start of Navbar section -->
+    
+    <div id="nav-div">
+        <img src="images/Rainin.png" id="logo" width="80px" alt="PCL Logo">
+        <div id="nav-buttons-mobile">
+            <button id="bars" onclick="menu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <nav id="nav-buttons">
+            <a href="/home" id="btn"><button id="btn">Home</button></a>
+            <a href="/products" id="btn"><button id="btn">Products</button></a>
+            <a href="/company" id="btn"><button id="btn">Company</button></a>
+            <button id="btn">About Us</button>
+        </nav>
+    </div>
+    <div id="nav-div-scroll">
+        <div id="nav-div-sub-scroll">
+            <nav id="nav-buttons">
+            <a href="/home" id="btn"><button id="btn" style="border-bottom-left-radius: 30px; border-top-left-radius: 30px;">Home</button></a>
+            <a id="btn" href="/products"><button id="btn">Products</button></a>
+            <a href="/company" id="btn"><button id="btn">Company</button></a>
+            <button id="btn">About Us</button>
+        </nav>
+        </div>
+    </div>
+    <div style="display: flex; justify-items: left;">
+        <div id="mobile-menus">
+            <div onclick="closebtn()" id="mobile-close-button"><i class="fa-solid fa-x" style="color: #ffff"></i></div>
+            <div id="nav-mobile-buttons">
+                <a href="/home"><button id="btn">Home</button></a>
+                <a href="/products"><button id="btn">Products</button></a>
+                <a href="/company"><button id="btn">Company</button></a>
+                <a href=""><button id="btn">About Us</button></a>
+            </div>
+            <h1 style="display: flex; margin-left: auto;
+            margin-right: auto;">Rainin' Tech</h1>
+        </div>
+    </div>
+
+    <!-- End of Navbar section -->
+
+    <div id="main-page">
+        <div id="display-titles">
+            <h1 id="title">Rainin' Software</h1>
+            <h1 id="sub-title">Creating the most relaxing Software <br>
+                in order to relieve <span style="color: #aa0000; text-shadow: 0px 0px 39px;">stress</span>.</h1>
+        </div>
+        <div id="title-buttons" style="gap: 10px;">
+            <button id="demo-btn" class="title-btn">Downloads</button>
+            <button id="title-btn" class="title-btn">Learn More</button>
+        </div>
+    </div>
+    <div style="margin-top: 40px;">
+        <h1 id="about-proj" style="font-size: 21px; 
+        text-align: center;">About our Projects</h1>
+    </div>
+    <div>
+        <p style="font-family: 'Poppins-Regular';
+        text-align: center;">
+            We are aiming to create the most relaxing Software for people to use, and relieve their stress by creating a relaxing User Interface.
+            <br>
+            <br>
+            Rainin aims to soothe people's stress, worries and headaches mainly with a raining theme, the name Rainin' was founded in a failed Desktop Application that was meant to be a drag and drop To-Do List, but then the name was reused for Rainin' Audio Player, aimed to soothe people with its relaxing default music and interface. <br>
+            Rainin mainly uses <a href="https://www.electronjs.org/">Electron</a>, and raw HTML, CSS and JavaScript, and we're looking foward to making it better just for our users, or you can customize it yourself too by entering the main directory and looking through the code.
+        </p>
+    </div>
+    <div id="image-showcases">
+        <div id="image-showcase-text">
+            <h1 style="font-family: 'Poppins-Regular';
+            text-align: center;">Customize it, Make it yours.<h1>
+        </div>
+        <img id="images" src="images/rainin-sc-1.png" class="responsive-img" alt="Screenshot of da Rain" id="the-image" style="border-radius: 10px;" width="900px">
+        <div id="image-showcase-text">
+            <h1>We are aiming to make our software as customizable as possible!</h1>
+        </div>
+    </div>
+
+
+    <div id="ending-page" style="margin-top: 100px;">
+        <div id="logotext">
+            <svg style="justify-self: center;" width="70" height="70" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                <radialGradient id="grad" cx="50%" cy="50%" r="75%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:#00c6ff; stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#0072ff; stop-opacity:1" />
+                </radialGradient>
+            </defs>
+                <circle cx="100" cy="100" r="100" fill="url(#grad)" />
+                <text x="50%" y="55%" text-anchor="middle" font-size="100" fill="black" font-family="Poppins-Regular" dominant-baseline="middle">R</text>
+            </svg>
+            <a href="" id="logo-linking">Rainin' Corporation</a>
+        </div>
+
+        <!-- Ending Menus -->
+
+        <div id="ending-menus">
+            <div id="the-menus">
+                <div id="products-section" style="gap: 10px;">
+                    <h1 style="font-size: 20px;">Products</h1>
+                    <a href="/404"><button id="btn" style="width: 100px;">Rainin' List</button></a>
+                    <a href="/404"><button id="btn" style="width: 130px;">Rainin' Chatter</button></a>
+                    <a href="/rainin-player"><button id="btn" style="width: 110px;">Rainin' Audio</button></a>
+                </div>
+            </div>
+            <div id="about-company-section" style="gap: 10px;">
+                    <h1 style="font-size: 20px;">Company</h1>
+                    <a href="/404"><button id="btn" style="width: 100px;">About Us</button></a>
+                    <a href="/404"><button id="btn" style="width: 130px;">Careers</button></a>
+                    <a href="/404"><button id="btn" style="width: 140px;">Rainin' Support</button></a>
+                    <a href="/404"><button id="btn" style="width: 120px;">Learn More</button></a>
+            </div>
+        </div>
+
+        <div id="ending-text">
+            <p style="color:gray;
+            text-align: center;">® Rainin' Software Corporation</p>
+        </div>
+    </div>
+    <script src="js/scripts.min.js"> </script>
+    <script src="js/scripts.js"> </script>
+    <script src="js/navbar.js"> </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background: linear-gradient(to bottom, #2d2d30, #1e1e1e);
+    color: white;
+}
+html, body {
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainin | Company</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="icon shortcut" type="x-icon" href="images/rainin-web.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/responsive/1.0.5/responsive.min.js"></script>
+</head>
+<body>
+    <!-- Start of Navbar section -->
+    
+    <div id="nav-div">
+        <img src="images/Rainin.png" id="logo" width="80px" alt="PCL Logo">
+        <div id="nav-buttons-mobile">
+            <button id="bars" onclick="menu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <nav id="nav-buttons">
+            <a href="/home" id="btn"><button id="btn">Home</button></a>
+            <a href="/products" id="btn"><button id="btn">Products</button></a>
+            <a href="/company" id="btn"><button id="btn">Company</button></a>
+            <button id="btn">About Us</button>
+        </nav>
+    </div>
+    <div id="nav-div-scroll">
+        <div id="nav-div-sub-scroll">
+            <nav id="nav-buttons">
+            <a href="/home" id="btn"><button id="btn" style="border-bottom-left-radius: 30px; border-top-left-radius: 30px;">Home</button></a>
+            <a id="btn" href="/products"><button id="btn">Products</button></a>
+            <a href="/company" id="btn"><button id="btn">Company</button></a>
+            <button id="btn">About Us</button>
+        </nav>
+        </div>
+    </div>
+    <div style="display: flex; justify-items: left;">
+        <div id="mobile-menus">
+            <div onclick="closebtn()" id="mobile-close-button"><i class="fa-solid fa-x" style="color: #ffff"></i></div>
+            <div id="nav-mobile-buttons">
+                <a href="/home"><button id="btn">Home</button></a>
+                <a href="/products"><button id="btn">Products</button></a>
+                <a href="/company"><button id="btn">Company</button></a>
+                <a href=""><button id="btn">About Us</button></a>
+            </div>
+            <h1 style="display: flex; margin-left: auto;
+            margin-right: auto;">Rainin' Tech</h1>
+        </div>
+    </div>
+
+    <!-- End of Navbar section -->
+
+    <script src="js/scripts.min.js"> </script>
+    <script src="js/scripts.js"> </script>
+    <script src="js/navbar.js"> </script>
+</body>
+</html>
