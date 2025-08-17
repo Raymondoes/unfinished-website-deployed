@@ -10,6 +10,6 @@ router.get('/', function (req, res) {
     res.render('rainin-music');
 });
 router.get('/win-download', function (req, res) {
-    res.download('rainindemob37.exe');
+    res.download('../rainindemob37.exe');
 });
 module.exports = router;
