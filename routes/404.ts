@@ -6,7 +6,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, 'views')));
 
 router.get('/', (req: Request, res: Response) => {
     res.render('error404');
