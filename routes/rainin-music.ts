@@ -6,7 +6,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'views')));
 
 router.get('/', (req: Request, res: Response) => {
     res.render('rainin-music');
