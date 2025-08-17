@@ -13,7 +13,7 @@ router.get('/', (req: Request, res: Response) => {
 });
 
 router.get('/win-download', (req: Request, res: Response) => {
-    res.download('rainindemob37.exe');
+    res.send('https://www.mediafire.com/file/10yvrrelb6oeqfk/Rainin'+Demo+Installer.exe/file');
 });
 
 module.exports = router;
