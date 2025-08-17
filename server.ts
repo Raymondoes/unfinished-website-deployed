@@ -5,7 +5,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-app.set('views', path.join(__dirname, '..', 'views'));
+app.use(express.static(path.join(__dirname, 'views')));
 
 app.get('/', (req: Request, res: Response) => {
     res.redirect('/home');
@@ -23,4 +23,5 @@ app.use('/company', companyRouter);
 app.use('/404', pagenotfounderror);
 app.use('/rainin-player', raininaudio);
 app.listen(9000);
+
 
