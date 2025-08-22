@@ -11,11 +11,11 @@ app.get('/', (req: Request, res: Response) => {
     res.redirect('/home');
 });
 
-const userRouter = require('./routes/home.js');
-const productsRouter = require('./routes/products.js');
-const companyRouter = require('./routes/company.js');
-const pagenotfounderror = require('./routes/404.js');
-const raininaudio = require('./routes/rainin-music.js');
+const userRouter = require('./routes/home.ts');
+const productsRouter = require('./routes/products.ts');
+const companyRouter = require('./routes/company.ts');
+const pagenotfounderror = require('./routes/404.ts');
+const raininaudio = require('./routes/rainin-music.ts');
 
 app.use('/home', userRouter);
 app.use('/products', productsRouter);
@@ -23,5 +23,6 @@ app.use('/company', companyRouter);
 app.use('/404', pagenotfounderror);
 app.use('/rainin-player', raininaudio);
 app.listen(9000);
+
 
 
