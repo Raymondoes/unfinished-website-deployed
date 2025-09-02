@@ -20,11 +20,13 @@ button:active {
     font-family: 'Poppins-Regular';
     display: inline-block;
     align-self: center;
-    width: 100px;
     background: none;
-    text-underline-offset: none;
     text-decoration: none;
     transition: background-color 0.1s ease;
+}
+
+.desktop {
+    height: 100%;
 }
 
 @media only screen and (maxWidth: 600px) {

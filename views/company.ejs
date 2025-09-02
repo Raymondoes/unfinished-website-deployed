@@ -18,24 +18,24 @@
     <!-- Start of Navbar section -->
     
     <div id="nav-div">
-        <img src="images/Rainin.png" id="logo" width="80px" alt="PCL Logo">
+        <img src="images/Rainin.png" class="not-selectable" id="logo" width="80px" alt="PCL Logo">
         <div id="nav-buttons-mobile">
             <button id="bars" onclick="menu()"><i class="fa-solid fa-bars"></i></button>
         </div>
         <nav id="nav-buttons">
-            <a href="/home" id="btn"><button id="btn">Home</button></a>
-            <a href="/products" id="btn"><button id="btn">Products</button></a>
-            <a href="/company" id="btn"><button id="btn">Company</button></a>
-            <button id="btn">About Us</button>
+            <button id="btn" class="desktop" onclick="home()">Home</button>
+            <button id="btn" class="desktop" onclick="products()">Products</button>
+            <button id="btn" class="desktop" onclick="company()">Company</button>
+            <button id="btn" class="desktop" onclick="aboutus()">About Us</button>
         </nav>
     </div>
     <div id="nav-div-scroll">
         <div id="nav-div-sub-scroll">
             <nav id="nav-buttons">
-            <a href="/home" id="btn"><button id="btn" style="border-bottom-left-radius: 30px; border-top-left-radius: 30px;">Home</button></a>
-            <a id="btn" href="/products"><button id="btn">Products</button></a>
-            <a href="/company" id="btn"><button id="btn">Company</button></a>
-            <button id="btn">About Us</button>
+            <button id="btn" class="desktop" onclick="home()" style="border-bottom-left-radius: 30px; border-top-left-radius: 30px;">Home</button>
+            <button id="btn" class="desktop" onclick="products()">Products</button>
+            <button id="btn" class="desktop" onclick="company()">Company</button>
+            <button id="btn" class="desktop" onclick="aboutus()">About Us</button>
         </nav>
         </div>
     </div>
@@ -43,10 +43,10 @@
         <div id="mobile-menus">
             <div onclick="closebtn()" id="mobile-close-button"><i class="fa-solid fa-x" style="color: #ffff"></i></div>
             <div id="nav-mobile-buttons">
-                <a href="/home"><button id="btn">Home</button></a>
-                <a href="/products"><button id="btn">Products</button></a>
-                <a href="/company"><button id="btn">Company</button></a>
-                <a href=""><button id="btn">About Us</button></a>
+                <button id="btn" onclick="home()">Home</button>
+                <button id="btn" onclick="products()">Products</button>
+                <button id="btn" onclick="company()">Company</button>
+                <button id="btn"  onclick="aboutus()">About Us</button>
             </div>
             <h1 style="display: flex; margin-left: auto;
             margin-right: auto;">Rainin' Tech</h1>
@@ -55,7 +55,11 @@
 
     <!-- End of Navbar section -->
 
-    <script src="js/scripts.min.js"> </script>
+    <div id="main-page">
+        
+    </div>
+
+    <script src="js/locations.js"> </script>
     <script src="js/scripts.js"> </script>
     <script src="js/navbar.js"> </script>
 </body>
