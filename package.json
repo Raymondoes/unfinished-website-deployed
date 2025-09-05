@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "build": "tsc",
-    "start": "nodemon server.js"
+    "dev": "ts-node server.ts",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
