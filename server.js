@@ -9,10 +9,10 @@ app.get('/', function (req, res) {
     res.redirect('/home');
 });
 var userRouter = require('./routes/home.ts');
-var productsRouter = require('./routes/products.ts');
-var companyRouter = require('./routes/company.ts');
-var pagenotfounderror = require('./routes/404.ts');
-var raininaudio = require('./routes/rainin-music.ts');
+var productsRouter = require('./routes/products');
+var companyRouter = require('./routes/company');
+var pagenotfounderror = require('./routes/404');
+var raininaudio = require('./routes/rainin-music');
 app.use('/home', userRouter);
 app.use('/products', productsRouter);
 app.use('/company', companyRouter);
