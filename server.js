@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'views')));
 app.get('/', function (req, res) {
     res.redirect('/home');
 });
-var userRouter = require('./routes/home.ts');
+var userRouter = require('./routes/home');
 var productsRouter = require('./routes/products');
 var companyRouter = require('./routes/company');
 var pagenotfounderror = require('./routes/404');
